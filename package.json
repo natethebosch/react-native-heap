@@ -62,6 +62,6 @@
     "lint": "./node_modules/prettylint/bin/cli.js \"js/**/*.{js,ts}\"",
     "lint-example": "./node_modules/prettylint/bin/cli.js \"examples/**/*.{js,ts}\"",
     "compile": "./node_modules/typescript/bin/tsc",
-    "prepublish": "npm run-script compile"
+    "postinstall": "npm run-script compile"
   }
 }
